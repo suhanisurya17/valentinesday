@@ -5,18 +5,39 @@ h1 {
 }
 
 html {
-    background-color: #FFCFFC;
     align-items: center;
     text-align: center;
     vertical-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
 button {
-    border-radius: 50px;
-    height: 40px;
-    width: 100px;
-    text-size-adjust: 30px;
+    border-radius: 25px; /* Soft pill shape */
+    height: 45px;
+    width: 120px;
+    font-family: 'Quicksand', sans-serif; /* Modern, rounded font */
+    font-size: 16px;
+    background: linear-gradient(135deg, #fbd3e9, #f5b0c2); /* Softer pinks */
+    color: #5a3d5c; /* Muted purple for elegance */
+    border: 2px solid #d88aa8; /* Softer pink border */
+    box-shadow: 0 4px 8px rgba(216, 138, 168, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    outline: none;
+    text-shadow: 1px 1px 2px rgba(90, 61, 92, 0.3);
 }
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #fbe6ee, #e8c6d1); /* Even softer on hover */
+    box-shadow: 0 6px 12px rgba(216, 138, 168, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
 
 .no:hover {
     background-color: #f58a87;
