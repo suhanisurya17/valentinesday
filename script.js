@@ -2,8 +2,7 @@ const evilButton = document.getElementById('evil-button')
 const OFFSET = 100
 
 evilButton.addEventListener('click', () => {
-  alert('Nice Try')
-  window.close()
+  alert('not so fast')
 })
 
 document.addEventListener('mousemove', (e) => {
