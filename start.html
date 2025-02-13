@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Will You Be My Valentine?</title>
+    <script>
+        function storeName() {
+            // Get the value from the textbox
+            var name = document.getElementById("name").value;
+            // Store the value in local storage
+            localStorage.setItem("storedName", name);
+            // Display a message to the user
+            alert("Thanks baddie!");
+            window.location.href = "main.html";
+
+        }
+    </script>
+</head>
+<body>
+    <img src="attributes/valentine.gif" alt="Valentine's Day GIF">
+    <h1>What is your name?</h1>
+    <input type="text" id="name" placeholder="Tell me your name or else.">
+    <button onclick="storeName()">submit</button>
+</body>
+</html>

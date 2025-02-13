@@ -1,0 +1,41 @@
+h1 {
+    font-family: 'Lobster', cursive;
+    text-decoration-color: aquamarine;
+    align-items: center;
+}
+
+html {
+    background-color: #FFCFFC;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+button {
+    border-radius: 50px;
+    height: 50px;
+    width: 100px;
+    text-size-adjust: 30px;
+}
+
+.no:hover {
+    background-color: red;
+}
+
+.yes:hover {
+    background-color: chartreuse;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ff66b2;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input[type="text"]:focus {
+    border-color: #ff99cc;
+    box-shadow: 0 0 10px #ff99cc;
+}

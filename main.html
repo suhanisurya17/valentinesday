@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>will you be my valentine?</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Retrieve the stored name from local storage
+            var name = localStorage.getItem("storedName");
+            // Display the name in the h1 element
+            if (name) {
+                document.getElementById("greeting").textContent = "Will you be my valentine, " + name + "?";
+            }
+        });
+    </script>
+</head>
+<body>
+    <img src="attributes/valentine.gif">
+    <h1 id="greeting">will you be my valentine?</h1>
+    <button  class="yes">yes</button>
+    <button class="no">no</button>
+</body>
+</html>
